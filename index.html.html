@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Login.html</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Arial", sans-serif, Helvetica;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: url(pic.jpg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            }
+          
+        .wrapper {
+            width: 420px;
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(20px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            color: black; 
+            border-radius: 10px;
+            padding: 30px 40px;
+        }
+        
+
+        .wrapper h1 {
+            font-size: 36px;
+            text-align: center;
+        }
+
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+        }
+
+        .input-box input {
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 40px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px 20px;
+        }
+
+        .input-box input::placeholder {
+            color: white; 
+        }
+
+        .input-box i {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        button {
+         background-color: deepskyblue;
+         color: white;
+         width: 300px;
+         height: 25px;
+         border: none;
+         border-radius: 10px;
+         align-items: center;
+         
+        }
+
+        button:hover {
+            background-color: blue;
+        }
+    </style>    
+</head>
+
+
+<body>
+
+    <div class="wrapper">       
+        <form>
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="username" placeholder="Username">
+                
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="file:///C:/Users/Me/OneDrive/Documents/Acabal_Practice.html/nash/forgot.html
+                ">Forgot password?</a>
+            </div>
+
+            <button type="button" class="btn" onclick="login()">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account? <a href="file:///C:/Users/Me/OneDrive/Documents/Acabal_Practice.html/nash/Register.html">Register</a></p>
+                
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function login() {
+            var email = document.getElementById("username").value;
+            var password = document.getElementById("password").value; 
+
+            if (email === 'naughtyboy@gmail.com' && password === '15963'){
+
+                alert("Login Successful!");
+                window.location.assign('file:///C:/Users/Me/OneDrive/Documents/Acabal_Practice.html/nash/HOMEPAGE%20NI%20NASH.html');
+            } else {
+                alert("Login Failed!");
+            }
+        }
+    </script>
+</body>
+</html>
